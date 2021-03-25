@@ -1,22 +1,41 @@
-# Evolve [![Build status](https://ci.appveyor.com/api/projects/status/oj9wf4bk0p0npggu/branch/master?svg=true)](https://ci.appveyor.com/project/lecaillon/evolve) [![Build Status](https://lecaillon.visualstudio.com/Evolve-CI/_apis/build/status/Evolve-CI?branchName=master)](https://lecaillon.visualstudio.com/Evolve-CI/_build/latest?definitionId=2&branchName=master) [![Build status](https://img.shields.io/azure-devops/coverage/lecaillon/evolve-ci/2/master.svg?color=brightgreen)](https://lecaillon.visualstudio.com/Evolve-CI/_build/latest?definitionId=2&branchName=master)
+# Evolve [![AppVeyor build status](https://img.shields.io/appveyor/build/lecaillon/evolve/master?label=AppVeyor)](https://ci.appveyor.com/project/lecaillon/evolve) [![Azure build Status](https://img.shields.io/azure-devops/build/lecaillon/Evolve-CI/2/master?label=Azure)](https://lecaillon.visualstudio.com/Evolve-CI/_build/latest?definitionId=2&branchName=master) [![Code coverage](https://img.shields.io/azure-devops/coverage/lecaillon/evolve-ci/2/master.svg?color=brightgreen)](https://lecaillon.visualstudio.com/Evolve-CI/_build/latest?definitionId=2&branchName=master) [![NuGet](https://img.shields.io/nuget/dt/evolve)](https://www.nuget.org/packages/Evolve) [![Twitter](https://img.shields.io/twitter/follow/evolve_db?label=Evolve&style=social)](https://twitter.com/intent/follow?screen_name=evolve_db)
 <img align="right" width="173px" height="173px" src="https://raw.githubusercontent.com/lecaillon/Evolve/master/images/logo.png">
 
-Database migration tool for .NET and .NET Core. Inspired by [Flyway](https://flywaydb.org/).
+Evolve is a personal, free-time project with no funding. If you use Evolve in your daily work and feel that it makes your life easier, consider supporting its development via [GitHub Sponsors](https://github.com/sponsors/lecaillon) :heart: and by adding a star to this repository :star:
 
-Evolve is an easy migration tool that uses plain SQL scripts. Its purpose is to automate your database changes, and help keep those changes synchronized through all your environments and development teams.
-This makes it an ideal tool for continuous integration / delivery.
+I’m very passionate about doing personal projects and very grateful that other people find them useful, too. I want to share as much as possible, but it doesn’t pay the bills. With your help, I can focus on open-source work more and make it sustainable. If your company uses any of my libraries, consider donating too as a sign of gratitude and for priority support!
 
-Over all Evolve embraces simplicity. Every time you build or run your project, it will automatically ensure that your database is up-to-date. Install it and forget it!
+## Beloved sponsors
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://www.veepee.com">
+          <img src="https://raw.githubusercontent.com/lecaillon/Evolve.Doc/master/static/images/Veepee.png" style="margin: 0rem auto">
+        </a>
+      </td>
+      <td align="center" valign="middle">
+        <a href="https://megaslice.uk">
+          <img src="https://raw.githubusercontent.com/lecaillon/Evolve.Doc/master/static/images/Megaslice.png" style="margin: 0rem auto">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-## Supporting Evolve
-If you like Evolve don't forget to support it by adding a star :star: and even better, by [sponsoring](https://github.com/sponsors/lecaillon) it :heart: Doing so, you will help me spend more time maintaining Evolve, so that this software continues being the best supported and feature-complete possible.
+## Introduction
+Evolve is a cross platform database migration tool inspired by [Flyway](https://flywaydb.org/), that uses plain SQL scripts.
+
+Its purpose is to automate your database changes, and help keep those changes synchronized through all your environments and development teams. This makes it an ideal tool for continuous integration / delivery.
+
+Overall Evolve embraces simplicity. Every time you run your project, it will automatically ensure that your database is up-to-date. Install it and forget it!
 
 ## Installation
-Evolve is available as a NuGet **lib**, a **dotnet tool** and a standalone **CLI**.
+Evolve is available as a .NET library, a .NET tool and a standalone CLI.
 
 |  | Evolve | Evolve Tool | Evolve CLI |
 |-|-|-|-|
-| Repository | [![NuGet](https://img.shields.io/nuget/dt/evolve)](https://www.nuget.org/packages/Evolve) | [![NuGet](https://img.shields.io/nuget/dt/Evolve.Tool)](https://www.nuget.org/packages/Evolve.Tool) | [![NuGet](https://img.shields.io/badge/GitHub-releases-brightgreen.svg?logo=github)](https://github.com/lecaillon/Evolve/releases) |
+| Repository | [![NuGet Evolve](https://img.shields.io/nuget/dt/evolve)](https://www.nuget.org/packages/Evolve) | [![NuGet Evolve.Tool](https://img.shields.io/nuget/dt/Evolve.Tool)](https://www.nuget.org/packages/Evolve.Tool) | [![GitHub CLI](https://img.shields.io/badge/GitHub-releases-brightgreen.svg?logo=github)](https://github.com/lecaillon/Evolve/releases/latest) |
 
 ## Supported databases
 <table>
